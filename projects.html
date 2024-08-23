@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortfolioSite - Featured Projects</title>
+    <!-- Include Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="projects.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Portfolio</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="skills.html">Skills</a>
+            <a href="contact.html">Contact</a>
+
+        </nav>
+    </header>
+    <main>
+        <h1>Featured Projects</h1>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="aws.png" alt="Scalable Multi-Tier VPC Infrastructure" class="project-image">
+                <div class="project-info">
+                    <h2 class="project-title">Scalable Multi-Tier VPC Infrastructure for Production Workloads</h2>
+                    <p class="project-description">Designed and implemented a scalable multi-tier VPC infrastructure on AWS to support production workloads, ensuring high availability and performance. Architected a VPC with public and private subnets across multiple availability zones, deployed load balancers to manage traffic, and configured Auto Scaling Groups to handle demand. Established NAT Gateways for secure internet access.</p>
+                    <p class="tech-stack"><strong>Technologies:</strong> AWS EC2, VPC, Elastic Load Balancer, Security Groups, Route Tables, Auto Scaling Groups, NAT Gateway, IAM Roles</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="jenkins.png" alt="CI/CD Pipeline" class="project-image">
+                <div class="project-info">
+                    <h2 class="project-title">CI/CD Pipeline for Node.js Todo Web App</h2>
+                    <p class="project-description">Designed and implemented a CI/CD pipeline for a Node.js Todo application, automating the build, test, and deployment processes. Set up a robust DevOps pipeline using Jenkins and Docker, deployed on an AWS EC2 instance. Configured GitHub webhooks to trigger Jenkins builds on code changes. Created and managed a Dockerfile for consistent deployment across environments.</p>
+                    <p class="tech-stack"><strong>Technologies:</strong> Jenkins, Docker, AWS EC2, Git, GitHub, Node.js</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Prasad Bandagale. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/prasad-bandagale/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/prasadbandagale" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+    </footer>
+</body>
+</html>

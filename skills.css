@@ -1,0 +1,129 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+header {
+    background-color: #1e1e1e;
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0.5rem 0; /* Added for better spacing in mobile view */
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+main {
+    flex: 1;
+    padding: 2rem 1rem;
+}
+
+h1 {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+    gap: 2rem;
+}
+
+.skill-category {
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+footer {
+    background-color: #2a2a2a;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.social-icons a {
+    color: #ffffff;
+    margin: 0 0.5rem;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr; /* Switch to single-column layout on small screens */
+    }
+
+    .skill-category {
+        padding: 1rem; /* Slightly reduce padding for mobile */
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    main {
+        padding: 1.5rem 1rem;
+    }
+
+    footer {
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        gap: 0.5rem; /* Reduce gap between items in mobile view */
+    }
+
+    .skill-category {
+        padding: 0.75rem; /* Further reduce padding for very small screens */
+    }
+
+    h1 {
+        font-size: 1.25rem;
+    }
+
+    footer {
+        padding: 0.25rem;
+    }
+}
